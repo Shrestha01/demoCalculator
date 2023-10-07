@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { create, all } from "mathjs";
-import "./Calculator.css";
+dimport "./Calculator.css";
 
 const math = create(all);
 
