@@ -20,6 +20,8 @@ function Calculator() {
     } else if (value === "C") {
       setInput("");
       setResult("");
+    } else if (value === "Del") {
+      setInput((prevInput) => prevInput.slice(0, -1));
     } else {
       setInput((prevInput) => prevInput + value);
     }
@@ -28,7 +30,7 @@ function Calculator() {
   const buttons = [
     "",
     "",
-    "",
+    "Del",
     "C",
     "7",
     "8",
